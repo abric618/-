@@ -1,9 +1,18 @@
 1，python换行：字串换行用\n
 2,列表：列表可以用-1，-2等负数索引来调用最后位置的元素
         方法：list.append(content):用来在列表的末尾添加一个新元素
-              len(list):返回列表的长度
 3，类和对象：
 4，字典：尾随逗号可写可不写
         字典的键如果没有加引号，就会变成变量，在调用时Python会认为它是一个变量名，然后去内存里找这个变量，用它的值作为键。加上引号就会变成字串
 5,for的使用：在python中，for搭配上range(),切片和enumerate()会让它和C语言里面的for一样好用
-6，字串：方法：len(str):返回字串的长度
+6，字串：
+        方法：str.join(obj):把可迭代对象合并在str内
+7，内置函数：不用导入模块，不用点来引用
+            len(obj):返回可迭代对象的长度
+            range(start,stop,step):返回一个从start到stop，步长为step的整数序列，当step=-1时可以反转
+            enumerate(obj,start):给可迭代对象编号
+            eval(input()):智能读取输入内容
+            type(obj):返回obj的类型
+            isinstance(obj,tyoe):若obj的类型和type相同，则返回True,否则返回False
+            reversed(obj):返回一个倒序的obj
+8，切片：可迭代对象均可
