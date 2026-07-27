@@ -24,11 +24,15 @@
             isinstance(obj,tyoe):若obj的类型和type相同，则返回True,否则返回False
             reversed(obj):返回一个倒序obj的列表
             sorted(obj,key):返回一个按key排序的新的可迭代对象
+            abs(a):计算a的绝对值
 8，切片：可迭代对象均可
 9，集合：无序，不重复的可迭代对象
-10，模块：math模块：
+10，模块：math模块：sqrt():计算平方根
+                   dist(a,b):计算a和b两点之间的欧几里得距离，需要把a和b的坐标打包成列表或者元组
+                   hypot(a,b):等价于sqrt(a*a+b*b)
         statistics模块：mean(obj):返回obj的平均数
                         mutimode(obj):返回obj的众数，如果存在多个，则返回一个列表
         ramdom模块：ramdom():生成一个0到1的浮点数
-                   uniform(a,b):生成一个a到b的浮点数
-11，输出于输入：输出：数据小数点的格式输出：例如：num:.2f意为保持2位小数的浮点数类型的num
+                   uniform(a,b):生成一个a到b但不包括a和b的浮点数
+                   randint(a,b):生成一个a到b包括a和b的整数
+11，输出于输入：输出：数据小数点的格式输出：例如：f'{num:.2f}'意为保持2位小数的浮点数类型的num,注意搭配f使用
