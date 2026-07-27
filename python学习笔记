@@ -29,4 +29,6 @@
 10，模块：math模块：
         statistics模块：mean(obj):返回obj的平均数
                         mutimode(obj):返回obj的众数，如果存在多个，则返回一个列表
+        ramdom模块：ramdom():生成一个0到1的浮点数
+                   uniform(a,b):生成一个a到b的浮点数
 11，输出于输入：输出：数据小数点的格式输出：例如：num:.2f意为保持2位小数的浮点数类型的num
