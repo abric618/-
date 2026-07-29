@@ -24,6 +24,7 @@
               str.isdigit():检验str是不是都是数字
               str.isupper():检验str是不是都是大写字母
               str.islower():检验str是不是都是小写字母
+              str.
 7，内置函数：不用导入模块，不用点来引用
             len(obj):返回可迭代对象的长度
             range(start,stop,step):返回一个从start到stop，步长为step的整数序列，当step=-1时可以反转
