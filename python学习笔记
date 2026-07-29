@@ -3,6 +3,10 @@
         方法：list.append(content):用来在列表的末尾添加一个新元素,这个content可以用f来自定义格式
               list.sort(content,key):直接在原列表上按key排序，返回列表
               list.reverse():原地反转list
+              list.remove(x):移除列表中第一个匹配的值x
+              list.pop(i):移除并返回索引i处的元素(默认最后一个)
+              list.clear():清空整个列表
+              list.insert(index,content):往index处插入content
 3，类和对象：
 4，字典：尾随逗号可写可不写
         字典的键如果没有加引号，就会变成变量，在调用时Python会认为它是一个变量名，然后去内存里找这个变量，用它的值作为键。加上引号就会变成字串
@@ -14,7 +18,12 @@
         方法：str.join(obj):把可迭代对象以str为连接符合并在一起
               str.lstrip('ch'):只去掉str左边的ch
               str.rstrip('ch'):只去掉str右边的ch
-              str.strip('ch'):从左到右去除str的ch
+              str.strip('ch'):从去除str首尾两端的ch
+              str.split('ch'):以ch为分隔符切割str，返回列表
+              str.relpace('ch1','ch2'):把str里的ch1换为ch2
+              str.isdigit():检验str是不是都是数字
+              str.isupper():检验str是不是都是大写字母
+              str.islower():检验str是不是都是小写字母
 7，内置函数：不用导入模块，不用点来引用
             len(obj):返回可迭代对象的长度
             range(start,stop,step):返回一个从start到stop，步长为step的整数序列，当step=-1时可以反转
@@ -25,11 +34,13 @@
             reversed(obj):返回一个倒序obj的列表
             sorted(obj,key):返回一个按key排序的新的可迭代对象
             abs(a):计算a的绝对值
+            round(num,digit):用于对一个数字进行四舍五入，并可以指定保留的小数位数
 8，切片：可迭代对象均可
 9，集合：无序，不重复的可迭代对象
 10，模块：math模块：sqrt():计算平方根
                    dist(a,b):计算a和b两点之间的欧几里得距离，需要把a和b的坐标打包成列表或者元组
                    hypot(a,b):等价于sqrt(a*a+b*b)
+                   floor(num):对num向下取整
         statistics模块：mean(obj):返回obj的平均数
                         mutimode(obj):返回obj的众数，如果存在多个，则返回一个列表
         ramdom模块：ramdom():生成一个0到1的浮点数
@@ -38,3 +49,4 @@
 11，输出于输入：输出：数据小数点的格式输出：例如：f'{num:.2f}'意为保持2位小数的浮点数类型的num,注意搭配f使用
 12，有趣的python：this模块：在python中输入import this就会看到《the zen of python》这篇python之禅
                  import antigravity：会打开一个网页漫画，画的是Python之父关于“import antigravity”的玩笑。
+13，关键字：del:删除
