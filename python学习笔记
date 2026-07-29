@@ -46,6 +46,8 @@
         ramdom模块：ramdom():生成一个0到1的浮点数
                    uniform(a,b):生成一个a到b但不包括a和b的浮点数
                    randint(a,b):生成一个a到b包括a和b的整数
+        collections模块:Counter类:继承自dict，所以它拥有字典的全部功能
+                                  Counter(iterable):计数，并返回字典
 11，输出于输入：输出：数据小数点的格式输出：例如：f'{num:.2f}'意为保持2位小数的浮点数类型的num,注意搭配f使用
 12，有趣的python：this模块：在python中输入import this就会看到《the zen of python》这篇python之禅
                  import antigravity：会打开一个网页漫画，画的是Python之父关于“import antigravity”的玩笑。
