@@ -50,7 +50,10 @@
                    randint(a,b):生成一个a到b包括a和b的整数
         collections模块:Counter类:继承自dict，所以它拥有字典的全部功能
                                   Counter(iterable):计数，并返回字典
-        re模块:findall(patttern, str)找到所有匹配的子串,列表，找不到返回空列表[]
+        re模块:findall(pattern, str)找到所有匹配的子串,列表，找不到返回空列表[]
+               match(pattern,str):它尝试从字符串的第一个字符开始，看看是否能匹配给定的正则表达式模式。
+               正则表达式(pattern):\d:
+                                  *:是一个量词，它表示 “前面的那个模式，可以出现 0 次或多次”
         sys模块:platform:识别操作系统
                 exit():退出程序
                 stdin.read():一次性读取所有输入，包括换行符
