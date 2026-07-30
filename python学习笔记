@@ -42,6 +42,7 @@
                    dist(a,b):计算a和b两点之间的欧几里得距离，需要把a和b的坐标打包成列表或者元组
                    hypot(a,b):等价于sqrt(a*a+b*b)
                    floor(num):对num向下取整
+                   ceil(num):向上取整
         statistics模块：mean(obj):返回obj的平均数
                         mutimode(obj):返回obj的众数，如果存在多个，则返回一个列表
         ramdom模块：ramdom():生成一个0到1的浮点数
@@ -55,6 +56,7 @@
                 stdin.read():一次性读取所有输入，包括换行符
                 stdin.readline():一次性读取所有输入，不包括换行符
         datetime模块：datetime类:strptime(str,时间格式):把str按格式转化为时间类型
+                      datedelta模块:total_seconds():时间段的总长度，以秒为单位(包含天数)
 11，输出于输入：输出：数据小数点的格式输出：例如：f'{num:.2f}'意为保持2位小数的浮点数类型的num,注意搭配f使用
 12，有趣的python：this模块：在python中输入import this就会看到《the zen of python》这篇python之禅
                  import antigravity：会打开一个网页漫画，画的是Python之父关于“import antigravity”的玩笑。
