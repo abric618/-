@@ -36,8 +36,10 @@
             sorted(obj,key):返回一个按key排序的新的可迭代对象
             abs(a):计算a的绝对值
             round(num,digit):用于对一个数字进行四舍五入，并可以指定保留的小数位数
+            pow(x,y):x**y
             map(函数,可迭代对象):依次把可迭代对象中的每个元素传给你指定的函数，收集所有返回值，最后返回一个迭代器。
 8，切片：可迭代对象均可
+        左闭右开
 9，集合：无序，不重复的可迭代对象
 10，模块：math模块：sqrt():计算平方根
                    dist(a,b):计算a和b两点之间的欧几里得距离，需要把a和b的坐标打包成列表或者元组
@@ -53,7 +55,8 @@
                                   Counter(iterable):计数，并返回字典
         re模块:findall(pattern, str)找到所有匹配的子串,列表，找不到返回空列表[]
                match(pattern,str):它尝试从字符串的第一个字符开始，看看是否能匹配给定的正则表达式模式。
-               正则表达式(pattern):\d:
+               正则表达式(pattern):\d:数字
+                                  |:或者
                                   *:是一个量词，它表示 “前面的那个模式，可以出现 0 次或多次”
         sys模块:platform:识别操作系统
                 exit():退出程序
@@ -61,7 +64,8 @@
                 stdin.readline():一次性读取所有输入，不包括换行符
         datetime模块：datetime类:strptime(str,时间格式):把str按格式转化为时间类型
                       datedelta模块:total_seconds():时间段的总长度，以秒为单位(包含天数)
-11，输出于输入：输出：数据小数点的格式输出：例如：f'{num:.2f}'意为保持2位小数的浮点数类型的num,注意搭配f使用
+11，输出于输入：输出：数据的格式输出：例如：f'{num:.2f}'意为保持2位小数的浮点数类型的num,注意搭配f使用
+                                        f'{num:.2%}'意为保持2位小数的百分数的输出格式
 12，有趣的python：this模块：在python中输入import this就会看到《the zen of python》这篇python之禅
                  import antigravity：会打开一个网页漫画，画的是Python之父关于“import antigravity”的玩笑。
 13，关键字：del:删除
