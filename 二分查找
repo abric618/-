@@ -1,1 +1,27 @@
+a = [1, 13, 26, 33, 45, 55, 68, 72, 83, 99]
+t = int(input())
 
+low = 0
+high = len(a) - 1
+found = False
+index = -1
+
+while low <= high:
+    # 按题目要求取中间元素：偶数个时取较大的索引
+    mid = (low + high + 1) // 2
+    mid_val = a[mid]
+    print(mid_val)               # 输出本次比较的中间元素值
+
+    if mid_val == t:
+        found = True
+        index = mid
+        break
+    elif mid_val > t:
+        high = mid - 1
+    else:
+        low = mid + 1
+
+if found:
+    print(index)
+else:
+    print(-1)
