@@ -54,8 +54,9 @@
                    randint(a,b):生成一个a到b包括a和b的整数
         collections模块:Counter类:继承自dict，所以它拥有字典的全部功能
                                   Counter(iterable):计数，并返回字典
-        re模块:findall(pattern, str)找到所有匹配的子串,列表，找不到返回空列表[]
+        re模块:findall(pattern, str)找到所有匹配的字串,返回列表，找不到返回空列表[]
                match(pattern,str):它尝试从字符串的第一个字符开始，看看是否能匹配给定的正则表达式模式。
+               sub(pattern, repl, string):它的作用是在字符串string中，搜索所有与pattern匹配的部分，并把它们都替换成repl。
                正则表达式(pattern):\d:数字
                                   |:或者
                                   *:是一个量词，它表示 “前面的那个模式，可以出现 0 次或多次”
