@@ -1,3 +1,4 @@
+二分法查找
 a = [1, 13, 26, 33, 45, 55, 68, 72, 83, 99]
 t = int(input())
 
@@ -25,3 +26,35 @@ if found:
     print(index)
 else:
     print(-1)
+
+
+
+二分法求方程根
+import math
+
+def f(x):
+    """方程 ln(x) * sin(x/3) - 1 = 0"""
+    return math.log(x) * math.sin(x / 3) - 1
+
+# 读取区间端点
+x1 = float(input())
+x2 = float(input())
+
+# 确保 a 是左端点，b 是右端点，且 a < b
+if x1 < x2:
+    a, b = x1, x2
+else:
+    a, b = x2, x1
+
+# 二分法求根
+while b - a > 1e-6:          # 精度足够，保证四舍五入正确
+    mid = (a + b) / 2
+    if f(mid) == 0:
+        break
+    if f(a) * f(mid) < 0:    # 根在左半边
+        b = mid
+    else:                    # 根在右半边
+        a = mid
+
+# 输出结果，保留一位小数
+print(f"{mid:.1f}")
