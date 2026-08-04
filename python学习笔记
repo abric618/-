@@ -33,7 +33,7 @@
             eval(input()):智能读取输入内容
             type(obj):返回obj的类型
             isinstance(obj,tyoe):若obj的类型和type相同，则返回True,否则返回False
-            reversed(obj):返回一个倒序obj的列表
+            reversed(obj):返回一个倒序obj的迭代器，需要list,tuple来显示转换
             sorted(obj,key):返回一个按key排序的新的可迭代对象
             abs(a):计算a的绝对值
             round(num,digit):用于对一个数字进行四舍五入，并可以指定保留的小数位数
